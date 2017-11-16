@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/paddingDefault"
+    android:contentDescription="@string/aboutDev"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAbout"
+        android:contentDescription="@string/imageDev"
+        android:src="@mipmap/ic_alison"
+        android:layout_centerHorizontal="true"
+        android:layout_width="116dp"
+        android:layout_height="116dp" />
+
+
+    <TextView
+        android:id="@+id/txtNomeAbout"
+        android:text="@string/nameDev"
+        android:contentDescription="@string/nameDevDesc"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_below="@id/imgAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearAll"
+        android:layout_below="@id/txtNomeAbout"
+        android:padding="@dimen/spaceContentAreas"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearFacebook"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgFacebook"
+                android:src="@drawable/ic_facebook"
+                android:contentDescription="@string/iconFacebook"
+                android:layout_marginTop="@dimen/spaceContentAreas"
+                android:layout_width="@dimen/sizeImageIcon"
+                android:layout_height="@dimen/sizeImageIcon" />
+
+            <TextView
+                android:id="@+id/txtFacebook"
+                android:text="@string/facebook"
+                android:contentDescription="@string/textFacebook"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/spaceContentAreas"
+                android:layout_marginLeft="@dimen/spaceContentAreas"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLinkedin"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLinkedin"
+                android:src="@drawable/ic_linkedin"
+                android:contentDescription="@string/iconLinkedin"
+                android:layout_marginTop="@dimen/spaceContentAreas"
+                android:layout_marginStart="@dimen/spaceContentAreas"
+                android:layout_marginLeft="@dimen/spaceContentAreas"
+                android:layout_width="@dimen/sizeImageIcon"
+                android:layout_height="@dimen/sizeImageIcon" />
+
+            <TextView
+                android:id="@+id/txtLinkedin"
+                android:text="@string/linkedin"
+                android:contentDescription="@string/textLinkedin"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/spaceContentAreas"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearInstagram"
+            android:layout_marginStart="@dimen/spaceContentAreas"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgInstagram"
+                android:src="@drawable/ic_instagram"
+                android:contentDescription="@string/iconInstagram"
+                android:layout_marginTop="@dimen/spaceContentAreas"
+                android:layout_width="@dimen/sizeImageIcon"
+                android:layout_height="@dimen/sizeImageIcon" />
+
+            <TextView
+                android:id="@+id/txtInstagram"
+                android:text="@string/instagram"
+                android:contentDescription="@string/textInstagram"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/spaceContentAreas"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/me"
+        android:contentDescription="@string/textAboutDev"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:layout_below="@id/linearAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/paddingDefault"
+    android:background="@drawable/custom_effect_rectangle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtNamePull"
+        android:textColor="@color/colorTitlePrimaryText"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtDescriptionPull"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/txtNamePull"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserPull"
+        android:src="@drawable/ic_account_circle"
+        android:layout_width="@dimen/sizeImage"
+        android:layout_height="@dimen/sizeImage"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:layout_below="@id/txtDescriptionPull" />
+
+    <TextView
+        android:id="@+id/txtUserNamePull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/colorTitlePrimaryText"
+        android:layout_toEndOf="@id/imgUserPull"
+        android:layout_below="@id/txtDescriptionPull"/>
+
+    <TextView
+        android:id="@+id/txtFullNamePull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/imgUserPull"
+        android:layout_below="@id/txtUserNamePull"/>
+
+    <TextView
+        android:id="@+id/txtDataPull"
+        android:layout_marginStart="@dimen/spaceContentAreas"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:layout_toEndOf="@id/txtFullNamePull"
+        android:layout_below="@id/txtUserNamePull"/>
+</RelativeLayout>

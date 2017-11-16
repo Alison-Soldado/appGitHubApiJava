@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBarPull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgGitPull"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_github"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtFailureTextPull"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:text="@string/failureList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgGitPull"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@color/colorGrey"
+        android:padding="@dimen/paddingDefault"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNumberOpen"
+            android:text="16"
+            android:textStyle="bold"
+            android:textColor="@color/colorForkAndStarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtOpen"
+            android:text="opened"
+            android:textStyle="bold"
+            android:textColor="@color/colorForkAndStarText"
+            android:layout_marginStart="@dimen/spaceContentAreas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtBarra"
+            android:text="/"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/spaceContentAreas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNumberClose"
+            android:text="800"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/spaceContentAreas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtClose"
+            android:text="closed"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/spaceContentAreas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListPull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"/>
+</RelativeLayout>

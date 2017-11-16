@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/paddingDefault"
+    android:background="@drawable/custom_effect_rectangle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtNameHome"
+        android:textColor="@color/colorTitlePrimaryText"
+        android:contentDescription="@string/nameRepo"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtDescriptionHome"
+        android:textColor="@color/colorPrimaryText"
+        android:contentDescription="@string/descriptionRepo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/txtNameHome"/>
+
+    <RelativeLayout
+        android:id="@+id/linearHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNameHome"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <ProgressBar
+            android:id="@+id/pbImgUserHome"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:theme="@style/CircularProgress"
+            android:layout_margin="@dimen/paddingDefault"
+            android:layout_width="@dimen/paddingDefault"
+            android:layout_height="@dimen/paddingDefault" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUserHome"
+            android:src="@drawable/ic_account_circle"
+            android:contentDescription="@string/imageUser"
+            android:layout_width="@dimen/sizeImage"
+            android:layout_height="@dimen/sizeImage" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtUserNameHome"
+        android:contentDescription="@string/nameUser"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:layout_marginStart="@dimen/spaceContentAreas"
+        android:layout_below="@id/linearHome"
+        android:gravity="end"
+        android:layout_toEndOf="@id/txtDescriptionHome"/>
+
+    <ImageView
+        android:id="@+id/imgForkRepositoryHome"
+        android:layout_width="@dimen/sizeImageIcon"
+        android:layout_height="@dimen/sizeImageIcon"
+        android:tint="@color/colorForkAndStarText"
+        android:contentDescription="@string/imageFork"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:src="@drawable/ic_fork_repository_home"
+        android:layout_below="@id/txtDescriptionHome"/>
+
+    <TextView
+        android:id="@+id/txtForkRepositoryHome"
+        android:contentDescription="@string/countFork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorForkAndStarText"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="@dimen/spaceContentAreas"
+        android:layout_below="@id/txtDescriptionHome"
+        android:layout_toEndOf="@id/imgForkRepositoryHome"/>
+
+    <ImageView
+        android:id="@+id/imgStarRepositoryHome"
+        android:layout_width="@dimen/sizeImageIcon"
+        android:layout_height="@dimen/sizeImageIcon"
+        android:tint="@color/colorForkAndStarText"
+        android:contentDescription="@string/imageStar"
+        android:layout_marginStart="@dimen/paddingDefault"
+        android:layout_marginTop="@dimen/spaceContentAreas"
+        android:src="@drawable/ic_star_repository_home"
+        android:layout_below="@id/txtDescriptionHome"
+        android:layout_toEndOf="@id/txtForkRepositoryHome"/>
+
+    <TextView
+        android:id="@+id/txtStarRepositoryHome"
+        android:contentDescription="@string/countStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="@dimen/spaceContentAreas"
+        android:textColor="@color/colorForkAndStarText"
+        android:layout_below="@id/txtDescriptionHome"
+        android:layout_toEndOf="@id/imgStarRepositoryHome"/>
+</RelativeLayout>

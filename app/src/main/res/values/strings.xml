@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">DesafioAndroidConcrete</string>
+
+    // tela home
+    <string name="titleList">Github JavaPop</string>
+    <string name="failureList">Não foi possível carregar a lista.</string>
+
+    // tela pull
+    <string name="titlePull">Nome Repositório</string>
+
+    // menu
+    <string name="about">Sobre</string>
+    <string name="nameDev">Alison Soldado</string>
+    <string name="emailDev">alison.soldadoo@gmail.com</string>
+
+    // urlbase
+    <string name="urlBase">https://api.github.com/</string>
+
+    // Tela sobre
+    <string name="facebook">Facebook</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="instagram">Instagram</string>
+    <string name="me">Com 11 anos eu fui pela primeira vez em um Lan House, a partir daquele dia me apaixonei por esse mundo da Tecnologia. Gosto de tudo relacionado a ela, e atualmente trabalho e estudo a área de desenvolvimento de Aplicativos e Websites.
+Desenvolvo meus projetos no sistema operacional Linux, desde do dia que comecei a cursar Sistema de Informação, entre as distribuições que usei e uso estão: Fedora, Ubuntu, Debian e Kali.
+Nas horas vagas jogo video-game, leio um livro ou brinco com o violão, e isso tudo é claro, tomando o velho e bom Café.
+</string>
+
+    // toast
+    <string name="error_msg">Desculpe! Não foi possível encontrar repositórios.</string>
+    <string name="btn_retry">Tente novamente</string>
+    <string name="error_msg_no_internet">Sem conexão com a internet.</string>
+    <string name="error_msg_timeout">Servidor demorou para responder.</string>
+    <string name="error_msg_unknown">Erro desconhecido.</string>
+    <string name="tap_to_reload">Toque para recarregar</string>
+
+
+    //content description
+
+        // about
+        <string name="aboutDev">Tela sobre o desenvolvedor</string>
+        <string name="imageDev">Imagem do desenvolvedor</string>
+        <string name="nameDevDesc">Nome do desenvolvedor</string>
+        <string name="iconFacebook">Ícone do Facebook</string>
+        <string name="textFacebook">Texto Facebook</string>
+        <string name="iconLinkedin">Ícone do Linkedin</string>
+        <string name="textLinkedin">Texto Linkedin</string>
+        <string name="iconInstagram">Ícone do Instagram</string>
+        <string name="textInstagram">Texto Instagram</string>
+        <string name="textAboutDev">Texto sobre o desenvolvedor</string>
+
+        // home
+        <string name="menuHome">Menu da lista de repositório</string>
+        <string name="barraHome">Barra da lista de repositório</string>
+        <string name="contentHome">Conteúdo da lista de repositório</string>
+        <string name="imageGit">Imagem do GitHub</string>
+        <string name="failureHome">Texto de falha ao carregar a lista</string>
+        <string name="listRepo">Lista de repositórios</string>
+        <string name="nameRepo">Nome do repositório</string>
+        <string name="descriptionRepo">Descrição do repositório</string>
+        <string name="imageFork">Imagem do Fork</string>
+        <string name="countFork">Quantidade de Fork</string>
+        <string name="imageStar">Imagem da estrela</string>
+        <string name="countStar">Quantidade de estrela</string>
+        <string name="imageUser">Imagem do usuário</string>
+        <string name="nameUser">Nome do usuário</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
